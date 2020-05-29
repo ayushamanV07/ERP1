@@ -4,10 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdminLogin">
+    tools:context=".AdminLogin"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <EditText
         android:id="@+id/etSubTeacher"
+        style="@style/MyEditTextStyle"
+        android:layout_margin="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -23,25 +28,49 @@
         android:id="@+id/btLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="232dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="228dp"
+        android:background="@drawable/custom_dialog"
         android:onClick="work"
         android:text="Login"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.749" />
 
     <EditText
         android:id="@+id/etPassword"
+        style="@style/MyEditTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:ems="10"
         android:hint="password"
         android:inputType="textPassword"
         android:onClick="work"
         app:layout_constraintBottom_toTopOf="@+id/btLogin"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSubTeacher" />
+        app:layout_constraintTop_toBottomOf="@+id/etSubTeacher"
+        app:layout_constraintVertical_bias="0.472" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="283dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Tracher Login"
+        android:textColor="#FF6347"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

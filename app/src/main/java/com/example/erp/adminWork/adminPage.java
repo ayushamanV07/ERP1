@@ -20,10 +20,10 @@ public class adminPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_page);
 
-        addTeacher=(TextView)findViewById(R.id.tvAddTeacher);
-        addStudent=(TextView)findViewById(R.id.tvAddStudent);
-        addAdmin=(TextView)findViewById(R.id.tvAddAdmin);
-        addSubject=(TextView)findViewById(R.id.tvAddSub);
+//        addTeacher=(TextView)findViewById(R.id.tvAddTeacher);
+//        addStudent=(TextView)findViewById(R.id.tvAddStudent);
+//        addAdmin=(TextView)findViewById(R.id.tvAddAdmin);
+//        addSubject=(TextView)findViewById(R.id.tvAddSub);
     }
 
     public void addTeacher(View v){

@@ -4,10 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".adminWork.addTeacher">
+    tools:context=".adminWork.addTeacher"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <EditText
         android:id="@+id/etSubName"
+        style="@style/MyEditTextStyle"
+        android:layout_margin="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -21,6 +26,8 @@
 
     <EditText
         android:id="@+id/etSemester"
+        style="@style/MyEditTextStyle"
+        android:layout_margin="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -34,54 +41,69 @@
 
     <EditText
         android:id="@+id/etSubTeacher"
+        style="@style/MyEditTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:layout_marginBottom="396dp"
         android:ems="10"
         android:hint="username"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSemester"
-        app:layout_constraintVertical_bias="0.88" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416" />
 
     <EditText
         android:id="@+id/etPassword"
+        style="@style/MyEditTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:ems="10"
         android:hint="password"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etSubTeacher"
-        app:layout_constraintVertical_bias="0.176" />
+        app:layout_constraintVertical_bias="0.145" />
 
     <Button
         android:id="@+id/button2"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/custom_dialog"
         android:onClick="work"
-        android:text="Button"
+        android:text="SUBMIT"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPassword"
-        app:layout_constraintVertical_bias="0.709" />
+        app:layout_constraintVertical_bias="0.789" />
 
     <EditText
         android:id="@+id/etSem"
+        style="@style/MyEditTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="500dp"
         android:ems="10"
         android:hint="semester"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

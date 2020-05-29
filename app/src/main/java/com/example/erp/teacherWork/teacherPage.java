@@ -18,8 +18,8 @@ public class teacherPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher_page);
-        attendance=(TextView)findViewById(R.id.tvAttendance);
-        Marks=(TextView)findViewById(R.id.tvMarks);
+//        attendance=(TextView)findViewById(R.id.tvAttendance);
+//        Marks=(TextView)findViewById(R.id.tvMarks);
     }
 
     public void work(View v){

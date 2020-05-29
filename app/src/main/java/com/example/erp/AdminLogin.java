@@ -12,7 +12,7 @@ import android.widget.EditText;
 
 import android.widget.TextView;
 import android.widget.Toast;
-
+import android.app.ProgressDialog;
 import com.example.erp.adminWork.adminPage;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -27,10 +27,11 @@ public class AdminLogin extends AppCompatActivity {
     private EditText Password;
     DatabaseReference databaseReference;
     private TextView sample;
+    private ProgressDialog progressDialog;
 
     private Button Login;
 
-    private ProgressDialog progressDialog;
+
 
     public void work(View v) {
         validate(Name.getText().toString(), Password.getText().toString());
@@ -44,7 +45,7 @@ public class AdminLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_login);
 
-        getSupportActionBar().setTitle("Login");
+        //getSupportActionBar().setTitle("Login");
         Name=(EditText)findViewById(R.id.etSubTeacher);
         Password=(EditText)findViewById((R.id.etPassword));
 
@@ -52,6 +53,7 @@ public class AdminLogin extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
         userName=Name.getText().toString();
         password=Password.getText().toString();
+        progressDialog = new ProgressDialog(this);
 
 
         databaseReference=FirebaseDatabase.getInstance().getReference("admin");
@@ -73,7 +75,8 @@ public class AdminLogin extends AppCompatActivity {
         } else {
            /* progressDialog.setMessage("Please Wait");
             progressDialog.show();*/
-
+            progressDialog.setMessage("Please Wait");
+            progressDialog.show();
             databaseReference.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

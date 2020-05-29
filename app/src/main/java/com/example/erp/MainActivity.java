@@ -18,9 +18,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        admin=(TextView)findViewById(R.id.admintv);
-        student=(TextView)findViewById(R.id.studenttv);
-        teacher=(TextView)findViewById(R.id.teachertv);
+//        admin=(TextView)findViewById(R.id.admintv);
+//        student=(TextView)findViewById(R.id.studenttv);
+//        teacher=(TextView)findViewById(R.id.teachertv);
 
     }
 

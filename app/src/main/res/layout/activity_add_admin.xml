@@ -4,10 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".addAdmin">
+    tools:context=".addAdmin"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <EditText
         android:id="@+id/adminUserName"
+        style="@style/MyEditTextStyle"
+        android:layout_margin="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -21,6 +26,8 @@
 
     <EditText
         android:id="@+id/adminPassword"
+        style="@style/MyEditTextStyle"
+        android:layout_margin="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -34,10 +41,14 @@
 
     <Button
         android:id="@+id/button"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/custom_dialog"
         android:onClick="work"
         android:text="Submit"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

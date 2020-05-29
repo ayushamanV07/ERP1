@@ -4,10 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".adminWork.addTeacher">
+    tools:context=".adminWork.addTeacher"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
 
     <EditText
         android:id="@+id/etSubName"
+        style="@style/MyEditTextStyle"
+        android:layout_margin="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -21,6 +27,8 @@
 
     <EditText
         android:id="@+id/etSemester"
+        style="@style/MyEditTextStyle"
+        android:layout_margin="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -34,28 +42,37 @@
 
     <EditText
         android:id="@+id/etSubTeacher"
+        style="@style/MyEditTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:layout_marginBottom="396dp"
         android:ems="10"
         android:hint="Sub Teacher"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etSemester"
-        app:layout_constraintVertical_bias="0.88" />
+        app:layout_constraintVertical_bias="0.145" />
 
     <Button
         android:id="@+id/button2"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="228dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/custom_dialog"
         android:onClick="work"
-        android:text="Button"
+        android:text="SUBMIT"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSubTeacher"
+        app:layout_constraintVertical_bias="0.292" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -34,4 +34,14 @@ public class studentPage extends AppCompatActivity {
         intent2.putExtra("Name1",student);
         startActivity(intent2);
     }
+
+    public void work2(View v){
+
+        String student;
+        Intent intent = getIntent();
+        student= intent.getStringExtra("Name");
+        Intent intent2=new Intent(studentPage.this, MarksPage.class);
+        intent2.putExtra("Name1",student);
+        startActivity(intent2);
+    }
 }

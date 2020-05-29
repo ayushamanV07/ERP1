@@ -50,7 +50,7 @@ public class StudentLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_login);
 
-        getSupportActionBar().setTitle("Login");
+       // getSupportActionBar().setTitle("Login");
         Name=(EditText)findViewById(R.id.etSubTeacher);
         Password=(EditText)findViewById((R.id.etPassword));
 
@@ -77,8 +77,8 @@ public class StudentLogin extends AppCompatActivity {
         if (userName.isEmpty() || userPassword.isEmpty()) {
             Toast.makeText(this, "Please enter all the details", Toast.LENGTH_SHORT).show();
         } else {
-           /* progressDialog.setMessage("Please Wait");
-            progressDialog.show();*/
+            progressDialog.setMessage("Please Wait");
+            progressDialog.show();
 
             databaseReference.addValueEventListener(new ValueEventListener() {
                 @Override
