@@ -19,9 +19,9 @@ public class studentPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_page);
 
-        attendance=(TextView)findViewById(R.id.tvattend);
-        marks=(TextView)findViewById(R.id.tvmarks);
-        materials=(TextView)findViewById(R.id.tvmaterials);
+//        attendance=(TextView)findViewById(R.id.tvattend);
+//        marks=(TextView)findViewById(R.id.tvmarks);
+//        materials=(TextView)findViewById(R.id.tvmaterials);
 
     }
 

@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.erp.discussionforum.forun;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView admin;
@@ -33,5 +35,9 @@ public class MainActivity extends AppCompatActivity {
     }
     public void gotoTeacher(View v){
         startActivity(new Intent(MainActivity.this,TeacherLogin.class));
+    }
+    public void gotoForum(View v){
+
+        startActivity(new Intent(MainActivity.this, forun.class));
     }
 }

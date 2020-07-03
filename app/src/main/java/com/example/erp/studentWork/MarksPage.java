@@ -38,36 +38,46 @@ public class MarksPage extends AppCompatActivity {
         listDataHeader = new ArrayList<>();
         listHash = new HashMap<>();
 
-        listDataHeader.add("Hello1");
-        listDataHeader.add("Hello2");
-        listDataHeader.add("Hello3");
-        listDataHeader.add("Hello4");
+        listDataHeader.add("Internal 1");
+        listDataHeader.add("Internal 2");
+        listDataHeader.add("Internal 3");
+        listDataHeader.add("Event 1");
+        listDataHeader.add("Event 2");
 
-        List<String> ayush = new ArrayList<>();
-        ayush.add("This is the Expandable list");
+        List<String> first = new ArrayList<>();
+        first.add("Computer Architecture 27");
+        first.add("Agile 29");
+        first.add("Web Technology 30");
 
-        List<String> hello2 = new ArrayList<>();
-        hello2.add("item is best thing");
-        hello2.add("item1 is best thing");
-        hello2.add("item2 is best thing");
-        hello2.add("item3 is best thing");
+
+        List<String> second = new ArrayList<>();
+        second.add("Computer Architecture 24");
+        second.add("Agile 23");
+        second.add("Web Technology 26");
+
 
         List<String> hello3 = new ArrayList<>();
-        hello3.add("item is best thing");
-        hello3.add("item1 is best thing");
-        hello3.add("item2 is best thing");
-        hello3.add("item3 is best thing");
+        hello3.add("Computer Architecture 29");
+        hello3.add("Agile 21");
+        hello3.add("Web Technology 28");
+
 
         List<String> hello4 = new ArrayList<>();
-        hello4.add("item is best thing");
-        hello4.add("item1 is best thing");
-        hello4.add("item2 is best thing");
-        hello4.add("item3 is best thing");
+        hello4.add("Computer Architecture 29");
+        hello4.add("Agile 27");
+        hello4.add("Web Technology 30");
 
-        listHash.put(listDataHeader.get(0),ayush);
-        listHash.put(listDataHeader.get(1),hello2);
+        List<String> hello5 = new ArrayList<>();
+        hello5.add("Computer Architecture 26");
+        hello5.add("Agile 27");
+        hello5.add("Web Technology 28");
+
+
+        listHash.put(listDataHeader.get(0),first);
+        listHash.put(listDataHeader.get(1),second);
         listHash.put(listDataHeader.get(2),hello3);
         listHash.put(listDataHeader.get(3),hello4);
+        listHash.put(listDataHeader.get(4),hello5);
 
 
 

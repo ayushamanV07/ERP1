@@ -12,6 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".discussionforum.forun"></activity>
+        <activity android:name=".discussionforum.Upload_Recipi" />
+
+
         <activity android:name=".start">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,9 +42,7 @@
         <activity android:name=".TeacherLogin" />
         <activity android:name=".StudentLogin" />
         <activity android:name=".addAdmin" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
